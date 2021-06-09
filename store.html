@@ -4,12 +4,14 @@
 <head>
     <title>The Maroon5 | Store</title>
     <meta name="description" content="This is  the description">
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
@@ -17,128 +19,124 @@
             </ul>
         </nav>
         <hr>
-        <h1>The Maroon5</h1>
+        <h1 class="band-name band-name-large">The Maroon5</h1>
     </header>
-    <section>
-        <h2>MUSIC</h2>
-        <div>
-            <div>
-                <strong>Album 1</strong>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="images/Album 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/Album 1.png">
-            <div>
-                <span>$12.99</span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="images/Album 2.jpg" width="250">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <strong>Album 2</strong>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 3</span>
+                <img class="shop-item-image" src="images/Album 3.png" width="300">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/Album 2.jpg" height="300" width="300">
-            <div>
-                <span>$9.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Album 3</strong>
-            </div>
-            <img src="images/Album 3.png" height="300" width="350">
-            <div>
-                <span>$14.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Album 4</strong>
-            </div>
-            <img src="images/Album 4.jpeg" height="300" width="300">
-            <div>
-                <span>$19.99</span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 4</span>
+                <img class="shop-item-image" src="images/Album 4.jpeg" width="300">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
         </div>
     </section>
     <section>
-        <h2>MERCH</h2>
-        <div>
-            <div>
-                <strong>T-Shirts</strong>
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">T-Shirts</span>
+                <img class="shop-item-image" src="images/T-shirts.png" width="450">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$29.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/T-shirts.png" height="150" width="400">
-            <div>
-                <span>$29.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Poster</strong>
-            </div>
-            <img src="images/poster.png" height="200" width="200">
-            <div>
-                <span>$10.99</span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Poster</span>
+                <img class="shop-item-image" src="images/poster.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong> &lt;&gt;
-            <strong>PRICE</strong> &lt;&gt;
-            <strong>QUANTITY</strong>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="images/T-shirts.png" height="100" width="100">
-            <span>T-Shirts</span> &lt;&gt;
-            <span>$29.99</span> &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
-
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-colum">
+                    <img class="cart-item-image" src="images/T-shirts.png">
+                    <span class="cart-item-title">T-Shirts</span>
+                </div>
+                <span class="cart-price cart-column">$29.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" role="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-colum">
+                    <img class="cart-item-image" src="images/Album 1.png" height="100" width="100">
+                    <span class="cart-item-title">Album 1</span>
+                </div>
+                <span class="cart-price cart-column">$12.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" role="button">REMOVE</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="images/Album 1.png" height="100" width="100">
-            <span>T-Shirts</span> &lt;&gt;
-            <span>$12.99</span> &lt;&gt;
-            <input type="number" value="2">
-            <button role="button">REMOVE</button>
-
+        <div class="cart-total">
+            <strong class="cart-total-title">TOTAL</strong>
+            <span class="cart-total-price">$55.97</span>
         </div>
-        <hr>
-        <div>
-            <strong>TOTAL</strong>
-            <span>$55.97</span>
-        </div>
-        <div>
-            <button role="button">PURCHASE</button>
-        </div>
-
+        <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
     </section>
-
-
-    <footer>
-        <h3>The Maroon5</h3>
-        <ul>
-            <li>
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/YouTube Logo.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://Soptify.com" target="_blank">
-                    <img src="images/Spotify Logo.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://Facebook.com" target="_blank">
-                    <img src="images/Facebook Logo.png">
-                </a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Maroon5</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/YouTube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://Soptify.com" target="_blank">
+                        <img src="images/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://Facebook.com" target="_blank">
+                        <img src="images/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 

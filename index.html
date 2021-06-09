@@ -3,11 +3,13 @@
 <head>
     <title>The Maroon5</title>
     <meta name="description" content="This is  the description">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
@@ -15,78 +17,73 @@
             </ul>
         </nav>
         <hr>
-        <h1>The Maroon5</h1>
-        <button type="button">Get our latest Album</button>
-        <br>
-        <br>
-        <!-- TODO:Fine a suitable background image -->
-        <button type="button">&#9658;</button>
+        <h1 class="band-name band-name-large">The Maroon5</h1>
+        <div class="container">
+            <button class="btn btn-header" type="button">Get our latest Album</button>
+        </div>
+        <button class="btn btn-header btn-play" type="button">&#9658;</button>
     </header>
-    <section>
-        <h2>TOURS</h2>
+    <section class="content-section container">
+        <h2 class="section-header">TOURS</h2>
         <div>
-            <div>
-                <strong>JUL 16</strong> &lt;&gt;
-                <span>DETROIT, MI</span>&lt;&gt;
-                <span>DTE ENERGY MUSIC THEATRE</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 10, 2021</span>
+                <span class="tour-item tour-city">AUBURN, WA</span>
+                <span class="tour-item tour-arena">WHITE RIVER AMPHITHEATRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
-            <div>
-                <strong>JUL 19</strong> &lt;&gt;
-                <span>TORONTO, ON</span>&lt;&gt;
-                <span>BUDWEISER STAGE</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 12, 2021</span>
+                <span class="tour-item tour-city">WEST VALLY CITY, UT</span>
+                <span class="tour-item tour-arena">USANA AMPHITHEATRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
-            <div>
-                <strong>JUL 22</strong> &lt;&gt;
-                <span>BRISTOW, VA</span>&lt;&gt;
-                <span>JIGGY LUBE LIVE</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 14, 2021</span>
+                <span class="tour-item tour-city">ALBUQUERQUE, NM</span>
+                <span class="tour-item tour-arena">ISLETA AMPHITHEATRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
-            <div>
-                <strong>JUL 29</strong> &lt;&gt;
-                <span>PHOENIX, AZ</span>&lt;&gt;
-                <span>AK-CHIN PAVILLION</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 16, 2021</span>
+                <span class="tour-item tour-city">DALLAS, TX</span>
+                <span class="tour-item tour-arena">DOS EQUIS PAVILLION</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
-            <div>
-                <strong>AUG 2</strong> &lt;&gt;
-                <span>LAS VEGAS, NV</span>&lt;&gt;
-                <span>T-MOBILE ARENA</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 18, 2021</span>
+                <span class="tour-item tour-city">MARYLAND, MO</span>
+                <span class="tour-item tour-arena">HOLLYWOOD CASINO AMPHITHEATRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
-            <div>
-                <strong>AUG 7</strong> &lt;&gt;
-                <span>CONCORD, CA</span>&lt;&gt;
-                <span>CONCORD, PAVILION</span>&lt;&gt;
-                <button type="button">BUY TICKETS</button>
-                <hr>
+            <div class="tour-row">
+                <span class="tour-item tour-date">AUG 19, 2021</span>
+                <span class="tour-item tour-city">MILWAUKEE, WI</span>
+                <span class="tour-item tour-arena">AMERICAN FAMILY INSURANCE AMPHITHEATRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
             </div>
         </div>
     </section>
-    <footer>
-        <h3>The Maroon5</h3>
-        <ul>
-            <li>
-                <a href="https://youtube.com" target="_blank">
-                    <img src="images/YouTube Logo.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://Soptify.com" target="_blank">
-                    <img src="images/Spotify Logo.png">
-                </a>
-            </li>
-            <li>
-                <a href="https://Facebook.com" target="_blank">
-                    <img src="images/Facebook Logo.png">
-                </a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Maroon5</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="images/YouTube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://Soptify.com" target="_blank">
+                        <img src="images/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://Facebook.com" target="_blank">
+                        <img src="images/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
